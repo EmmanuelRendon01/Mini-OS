@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniOS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+
+        <section class="desktop">
+
+            <div class="aplications">
+
+                <input type="radio" id="app1" name="apps">
+                <input type="radio" id="app2" name="apps">
+                <input type="radio" id="app3" name="apps">
+                <input type="radio" id="salir" name="apps">
+
+                <article class="aplications__app">
+                    <label for="app1">
+                        <img class="app__img" src="./assets/weather.png" alt="weather-img">
+                    </label>
+                </article>
+
+                <article class="aplications__app">
+                    <label for="app2">
+                        <img class="app__img" src="./assets/notes.png" alt="notes-img">
+                    </label>
+
+                </article>
+
+                <article class="aplications__app">
+                    <label for="app3">
+                        <img class="app__img" src="./assets/work.png" alt="weather-img">
+                    </label>
+
+                </article>
+
+                <label id="salir-app" class="salir-app" for="salir">SALIR</label>
+                <div class="content">
+                    <iframe id="iframe1" class="app" src="weather.html"></iframe>
+                    <iframe id="iframe2" class="app" src="https://juanmendez98.github.io/Cafeteria/"></iframe>
+                    <iframe id="iframe3" class="app" src="notes.html"></iframe>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer-bar">
+
+        </section>
+    </footer>
+
+</body>
+</html>
