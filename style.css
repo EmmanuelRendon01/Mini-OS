@@ -3,16 +3,36 @@ body{
 }
 
 .desktop{
+    display: flex;
+    flex-direction: column;
     background-color: aqua;
-    height: 95vh;
+    height: 100vh;
+    justify-content: space-between;
 }
     .app__img{
-        width: 5%;
+        width: 5vw;
+    }
+
+    .desktop__bar{
+        background-color: white;
+    }
+
+
+    .desktop__apps{
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        margin-left: 0.5vw;
+        margin-top: 1vh;
     }
 
 .app {
     display: none;
 
+}
+
+.app__label{
+    cursor: pointer;
 }
 
 input[type="radio"] {
@@ -22,6 +42,22 @@ input[type="radio"] {
 .salir-app{
     display: none;
 }
+
+.desktop__bar{
+    display: flex;
+    align-items: center;
+
+    min-height: 8vh;
+    justify-content: flex-start;
+}
+
+    .bar__icons{
+        margin: 1vh;
+        max-width: 60px;
+        max-width: 60px;
+        min-width: 60px;
+        min-height: 60px;
+    }
 
 #app1:checked ~ .content #iframe1,
 #app2:checked ~ .content #iframe2,
@@ -58,12 +94,52 @@ input[type="radio"] {
 #app2:checked ~ .content #iframe2,
 #app3:checked ~ .content #iframe3{
     display: flex;
-    width: 100vw;
-    height: 50vh;
+    width: 99vw;
+    height: 70vh;
     border: none;
     border-radius: 15px;
     margin: 2px;
     }
+
+.desktop__bar{
+
+}
+
+#app1:checked ~ #salir-app,
+#app2:checked ~ #salir-app,
+#app3:checked ~ #salir-app{
+    display: block;
+    position: absolute;
+    padding: 10px;
+    margin: 5px;
+    background: #ff0000;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    top: 17vh;
+    right: 5vw;
+    z-index: 1001;
+}
+
+    .app__img{
+        width: 20vw;
+    }
+
+    .desktop__apps{
+        display: flex;
+        flex-direction: row;
+        gap: 4vh;
+        margin-left: 0.5vw;
+        margin-top: 1vh;
+    }
+
+    .bar__icons{
+        width: 12vw;
+    }
+
+
+
+
 }
 
 
